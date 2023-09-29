@@ -1,0 +1,49 @@
+ /* Add your existing CSS styles here */
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  /* Adjust navigation styles for mobile */
+  header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f8f8;
+    padding: 10px;
+  }
+  
+  header nav ul {
+    display: none;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    background-color: #f8f8f8;
+  }
+
+  header nav ul li {
+    padding: 10px;
+  }
+
+  header nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+
+  header input[type="checkbox"] {
+    display: none;
+  }
+
+  header .menu-icon {
+    display: block;
+    cursor: pointer;
+  }
+
+  /* Show/hide navigation menu on checkbox state */
+  header input[type="checkbox"]:checked ~ ul {
+    display: flex;
+  }
+}
+
+  
